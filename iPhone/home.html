@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+</head>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=Your_API_KEY"></script>
+
+<script>
+    var myCenter = new google.maps.LatLng(37.422230, -122.084058);
+
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+
+        marker.setMap(map);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<body>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">iPad</a></li>
+        <li><a class="active" href="#contact">iPhone</a></li>
+        <li><a href="#about">iMac</a></li>
+    </ul>
+
+    <!-- <br>
+    <br>
+    <br>
+
+
+    <section>
+        <div class="card">
+            <div class="card-img">
+                <img src="https://bgr.com/wp-content/uploads/2020/03/iphone-12-pro-concept.jpg?quality=70&strip=all&w=1200" alt="cardhead">
+            </div>
+            <div class="card-desc">
+                <h1>iPhone 12</h1>
+                <h2>starting from <i>$699</i></h2>
+                <br>
+                <button>Buy</button>
+            </div>
+        </div>
+    </section>
+ -->
+
+
+
+
+    <section class="front-section">
+
+        <h1 class="title">Next level processor</h1>
+
+    </section>
+
+    <!-- <img class="center" src='https://cdn.wccftech.com/wp-content/uploads/2020/09/A14-Bionic-2.jpg' alt="gif"> -->
+
+
+    <br>
+    <br>
+
+
+    <h1>A14 | bionic</h1>
+
+    <p>A14 Bionic is the fastest chip in a smartphone. And it pushes what’s possible.<br> Like crunching trillions of operations on the Neural Engine. Or shooting in Dolby <br> Vision — even pro movie cameras can’t do that. It’s superefficient for great
+        battery life.<br> And it’s ahead of its time, prepared to power pretty much anything that comes next.
+
+    </p>
+
+    <br>
+    <br>
+
+
+    <img class='center' src="C:\Users\97155\Desktop\projekt\a14_close_up.png" alt="">
+
+    <br>
+    <br>
+    <h1>Epic screen.</h1>
+
+    <br>
+
+    <img class='center2' src="C:\Users\97155\Desktop\projekt\epic_screen.png" alt="">
+
+    <br>
+    <br>
+    <section class="trailer">
+        <h1> Trailer </h1>
+        <iframe src="https://www.youtube.com/embed/cnXapYkboRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+    <br>
+    <br>
+
+    <h1>where to buy?
+    </h1>
+
+    <br>
+
+    <div id="map"></div>
+
+
+</body>
+
+</html>
